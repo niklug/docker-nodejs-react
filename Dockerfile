@@ -11,5 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
+ENV NODE_ENV development
+
 EXPOSE 8080
 CMD [ "npm", "start" ]
