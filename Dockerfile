@@ -15,4 +15,4 @@ COPY . /usr/src/app
 ENV NODE_ENV development
 
 EXPOSE 8080
-CMD [ "pm2-docker", "server.js" ]
+CMD [ "pm2-docker", "processes.json" ]
